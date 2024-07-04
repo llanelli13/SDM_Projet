@@ -1,38 +1,73 @@
-.App {
+.hangman-container {
+  max-width: 600px;
+  margin: 0 auto;
   text-align: center;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  color: #333;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.difficulty-buttons button {
+  background-color: #4CAF50;
   color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
-.App-link {
-  color: #61dafb;
+.difficulty-buttons button:hover {
+  background-color: #45a049;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.word-display {
+  font-size: 24px;
+  letter-spacing: 2px;
+  margin: 20px 0;
+}
+
+.mistakes, .points, .status {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.letters button {
+  background-color: #008CBA;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.letters button:hover {
+  background-color: #007B9E;
+}
+
+.letters button:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+.status.won {
+  color: green;
+}
+
+.status.lost {
+  color: red;
+}
+
+.hangman-drawing {
+  margin: 20px auto;
+  display: block;
 }
