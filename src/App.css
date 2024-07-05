@@ -1,0 +1,73 @@
+.hangman-container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #333;
+}
+
+.difficulty-buttons button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.difficulty-buttons button:hover {
+  background-color: #45a049;
+}
+
+.word-display {
+  font-size: 24px;
+  letter-spacing: 2px;
+  margin: 20px 0;
+}
+
+.mistakes, .points, .status {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.letters button {
+  background-color: #008CBA;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.letters button:hover {
+  background-color: #007B9E;
+}
+
+.letters button:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+.status.won {
+  color: green;
+}
+
+.status.lost {
+  color: red;
+}
+
+.hangman-drawing {
+  margin: 20px auto;
+  display: block;
+}
